@@ -8,6 +8,8 @@ var app = require('./server/serverSetup.js').app;
 
 console.log('got the app:', app);
 
+console.log('Mark: here is the server.js');
+
 // If deployed to production then the port will be assigned from the production environment's PORT environment variable. Otherwise, if run locally the server will listen for requests on port 8000.
 var port = process.env.PORT || 8080;
 
