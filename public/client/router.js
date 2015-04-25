@@ -12,8 +12,10 @@ var Router = Backbone.Router.extend({
 
 var router = new Router();
 
-router.on('route:home', function(){
-  console.log("we are here");
+router.on('route:about', function(){
+  var aboutUsView = new AboutUsView();
+  $('body').append(aboutUsView.render());
+  console.log("this should be about us.")
 });
 
 Backbone.history.start();
