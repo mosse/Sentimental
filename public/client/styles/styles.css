@@ -30,6 +30,21 @@ li {
   background-color: #264669;
 }
 
+.jumbotron {
+  background-color: #264669;
+  color: white;
+  text-align: center;
+}
+
+.jumbotron h1 {
+  font-size: 105px;
+  letter-spacing: 18px;
+}
+
+.jumbotron h3 {
+  font-weight: 100;
+}
+
 .tooltip {
   padding: 4px;
   font-size: 12px;
