@@ -12,11 +12,9 @@ var ChartView = Backbone.View.extend({
   },
 
   // currently working
-  // events: {
-  //   'click': function() {
-  //     console.log('clicked me!');
-  //     this.model.react();
-  //   }
+  
+  // events: on('chartRender', function(){
+  //   console.log('We are trying to render the chart');
   // },
 
   initialize: function(params){
