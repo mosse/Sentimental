@@ -45,13 +45,7 @@
 
   <script>
     $(function(){
-
-      // Set up model objects
-      // var chart = new ChartModel({keywords: ['BP'], sources: ['New York Times']});
-      // var app = new AppModel({chart: chart});
-
-      // Set up view for whole app
-      var appView = new AppView(/*{model: app}*/);
+      var appView = new AppView();
 
       // Render the view on the screen
       $('body').append(appView.render())

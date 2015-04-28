@@ -78,6 +78,8 @@ li {
 
 .bottomNav {
   background-color: #122C4A;
+  margin: 0px;
+  border: 0px;
 }
 
 .navbar-fixed-top {
@@ -108,7 +110,7 @@ a {
   height: 100%;
 }
 
-.landingpara {
+.landingpara div {
   padding: 0 25% 0 25%;
 }
 

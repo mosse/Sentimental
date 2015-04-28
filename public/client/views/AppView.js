@@ -21,7 +21,11 @@ var AppView = Backbone.View.extend({
     this.landingParaView.on('chartRender', function(){
       console.log("we made it");
       this.rerender();
-    }, this)
+    }, this);
+
+    this.topNavView.on('homeRender', function(){
+      this.repeatrender();
+    }, this);
   },
 
   render: function(){
@@ -39,6 +43,15 @@ var AppView = Backbone.View.extend({
       this.topNavView.$el,
       this.subBarView.$el,
       this.chartView.$el,
+      this.footerView.$el
+    ]);
+  },
+
+  repeatrender: function(){
+    return this.$el.html([
+      this.topNavView.$el,
+      this.jumbotronView.$el,
+      this.landingParaView.$el,
       this.footerView.$el
     ]);
   }
